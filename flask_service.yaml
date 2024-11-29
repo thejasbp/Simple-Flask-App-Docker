@@ -2,8 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: flaskapp_32
-  name: flaskapp_32
+    app: flaskapp32
+  name: flaskapp32
 spec:
   type: NodePort
   ports:
@@ -11,4 +11,4 @@ spec:
       targetPort: 5070
       protocol: TCP
   selector:
-    app: flaskapp_32
+    app: flaskapp32
